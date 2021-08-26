@@ -23,22 +23,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E4613EFF-51B4-45EF-98F1-7EB9B8086A22"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MadeInWeb/Utils/Request.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "searchVideo(nameVideo:page:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "03D39916-4E62-4094-BFEE-512A30C87189"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -71,22 +55,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "BAC6CCF8-3032-4DD5-92E4-2DB7CB493EB6"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "MadeInWeb/View/DetailSearchViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
-            landmarkName = "scrollViewDidScroll(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "5DBA6356-D513-4D7F-9A57-7461B63B5A86"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
@@ -94,39 +62,39 @@
             filePath = "MadeInWeb/Utils/Request.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
             landmarkName = "searchVideo(nameVideo:page:completion:)"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "5DBA6356-D513-4D7F-9A57-7461B63B5A86 - fafbc28ccc9da816"
+                  uuid = "5DBA6356-D513-4D7F-9A57-7461B63B5A86 - f145f1f8beb129b8"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "MadeInWeb.Request.searchVideo(nameVideo: Swift.String, page: Swift.String, completion: (Swift.Optional&lt;MadeInWeb.SearchYoutubeModel&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
                   moduleName = "MadeInWeb"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nadilsonsantana/temp/MadeInWeb/MadeInWeb/Utils/Request.swift"
+                  urlString = "file:///Users/nadilsonsantana/MadeInWeb/MadeInWeb/Utils/Request.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "743">
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "712">
                </Location>
                <Location
-                  uuid = "5DBA6356-D513-4D7F-9A57-7461B63B5A86 - 6596dd7cbad85073"
+                  uuid = "5DBA6356-D513-4D7F-9A57-7461B63B5A86 - 6e28ee08c8f4d11d"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
                   symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in MadeInWeb.Request.searchVideo(nameVideo: Swift.String, page: Swift.String, completion: (Swift.Optional&lt;MadeInWeb.SearchYoutubeModel&gt;, Swift.Bool) -&gt; ()) -&gt; ()"
                   moduleName = "MadeInWeb"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/nadilsonsantana/temp/MadeInWeb/MadeInWeb/Utils/Request.swift"
+                  urlString = "file:///Users/nadilsonsantana/MadeInWeb/MadeInWeb/Utils/Request.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "29"
-                  endingLineNumber = "29"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
                   offsetFromSymbolStart = "166">
                </Location>
             </Locations>

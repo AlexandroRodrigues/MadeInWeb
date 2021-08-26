@@ -8,7 +8,7 @@
 import UIKit
 
 class DetailSearchViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchVideoTextField: UITextField!
     
@@ -18,7 +18,7 @@ class DetailSearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         
     }
     
@@ -76,7 +76,7 @@ extension DetailSearchViewController: UITableViewDelegate {
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-           if (((scrollView.contentOffset.y + scrollView.frame.size.height) > scrollView.contentSize.height )) {
+        if (((scrollView.contentOffset.y + scrollView.frame.size.height) > scrollView.contentSize.height )) {
             if canLoadPage {
                 canLoadPage = false
                 detailController.requestSearchVideoPage(nameVideo: detailController.titleSearch, page: detailController.nextPage()) { success in
@@ -86,6 +86,6 @@ extension DetailSearchViewController: UITableViewDelegate {
                     }
                 }
             }
-           }
-       }
+        }
+    }
 }

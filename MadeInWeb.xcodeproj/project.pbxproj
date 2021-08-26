@@ -576,6 +576,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				apiKey = AIzaSyDWRM7nhXnex_2HGd7gulBc2S2JEOr1UDc;
+				baseURL = "https://www.googleapis.com/youtube/v3";
 			};
 			name = Debug;
 		};
@@ -596,6 +598,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				apiKey = AIzaSyDWRM7nhXnex_2HGd7gulBc2S2JEOr1UDc;
+				baseURL = "https://www.googleapis.com/youtube/v3";
 			};
 			name = Release;
 		};

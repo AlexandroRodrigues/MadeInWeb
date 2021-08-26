@@ -10,17 +10,21 @@ import Alamofire
 
 class Request: NSObject {
     
+    var baseURL: String {
+        return Bundle.main.object(forInfoDictionaryKey: "baseURL") as? String ?? ""
+    }
     
-    private let baseURL = "https://www.googleapis.com/youtube/v3"
+    var apiKey: String {
+        return Bundle.main.object(forInfoDictionaryKey: "apiKey") as? String ?? ""
+    }
+    
     private let searchVideoEndPoint = "/search"
-    
-    private let api_Key = "AIzaSyDWRM7nhXnex_2HGd7gulBc2S2JEOr1UDc"
     
     func searchVideo(nameVideo: String, page: String = "", completion: @escaping (SearchYoutubeModel?, Bool) -> Void) {
         
         let param = ["part":"id,snippet",
                      "q":nameVideo,
-                     "key":api_Key,
+                     "key":apiKey,
                      "maxResults": "20",
                      "pageToken": page
         ]
