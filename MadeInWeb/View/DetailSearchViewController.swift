@@ -35,7 +35,8 @@ class DetailSearchViewController: UIViewController {
     
     @IBAction func btnSearch(_ sender: Any) {
         self.searchVideoTextField.resignFirstResponder()
-        detailController.requestSearchVideo(nameVideo: searchVideoTextField.text ?? "") { success in
+        detailController.requestSearchVideo(nameVideo: searchVideoTextField.text ?? "") { [weak self] success in
+            guard let self = self else { return }
             if success {
                 self.tableView.reloadData()
             } else {

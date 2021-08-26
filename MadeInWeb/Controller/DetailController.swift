@@ -34,10 +34,10 @@ class DetailController: NSObject {
     }
     
     func requestSearchVideoPage(nameVideo: String, page: String, completion: @escaping (Bool) -> Void) {
-        request.searchVideo(nameVideo: nameVideo, page: page) { searchYoutubeModel, success in
+        request.searchVideo(nameVideo: nameVideo, page: page) { [weak self] searchYoutubeModel, success in
             if success {
-                self.searchYoutubeModel?.items?.append(contentsOf: searchYoutubeModel?.items ?? [])
-                self.searchYoutubeModel?.nextPageToken = searchYoutubeModel?.nextPageToken
+                self?.searchYoutubeModel?.items?.append(contentsOf: searchYoutubeModel?.items ?? [])
+                self?.searchYoutubeModel?.nextPageToken = searchYoutubeModel?.nextPageToken
                 completion(true)
             } else {
                 completion(false)

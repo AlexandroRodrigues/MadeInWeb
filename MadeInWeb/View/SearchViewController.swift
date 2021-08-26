@@ -22,7 +22,8 @@ class SearchViewController: UIViewController {
 
     @IBAction func searchButton(_ sender: Any) {
         self.searchTextField.resignFirstResponder()
-        controller.requestSearchVideo(nameVideo: searchTextField.text ?? "") { success in
+        controller.requestSearchVideo(nameVideo: searchTextField.text ?? "") { [weak self] success in
+            guard let self = self else { return }
             if success {
                 self.searchTextField.text = ""
                 self.goToDetailScreen()

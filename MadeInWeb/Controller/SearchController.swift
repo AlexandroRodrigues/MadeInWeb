@@ -15,9 +15,9 @@ class SearchController: NSObject {
     
     
     func requestSearchVideo(nameVideo: String, completion: @escaping (Bool) -> Void) {
-        request.searchVideo(nameVideo: nameVideo) { searchYoutubeModel, success in
+        request.searchVideo(nameVideo: nameVideo) { [weak self] searchYoutubeModel, success in
             if success {
-                self.searchYoutubeModel = searchYoutubeModel
+                self?.searchYoutubeModel = searchYoutubeModel
                 completion(true)
             } else {
                 completion(false)
