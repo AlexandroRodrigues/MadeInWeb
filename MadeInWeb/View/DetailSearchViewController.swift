@@ -35,6 +35,7 @@ class DetailSearchViewController: UIViewController {
     
     @IBAction func btnSearch(_ sender: Any) {
         self.searchVideoTextField.resignFirstResponder()
+        self.tableView.scrollToRow(at: IndexPath(item: 0, section: 0), at: .top, animated: true)
         detailController.requestSearchVideo(nameVideo: searchVideoTextField.text ?? "") { [weak self] success in
             guard let self = self else { return }
             if success {
